@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pizzaInput = new System.Windows.Forms.TextBox();
@@ -38,11 +39,11 @@
             this.calulateButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.moneyText = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
             this.changeOutput = new System.Windows.Forms.Label();
             this.printButton = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.printLabel = new System.Windows.Forms.Label();
             this.newOrderButton = new System.Windows.Forms.Button();
             this.subOutput = new System.Windows.Forms.Label();
             this.taxOutput = new System.Windows.Forms.Label();
@@ -103,7 +104,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Number of Wings:";
+            this.label4.Text = "Number of Wings";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // wingsInput
@@ -127,7 +128,7 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.Firebrick;
+            this.label5.BackColor = System.Drawing.Color.IndianRed;
             this.label5.Location = new System.Drawing.Point(1, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 12);
@@ -142,12 +143,12 @@
             this.label6.Text = "Tendered:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // moneyText
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 294);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(57, 20);
-            this.textBox1.TabIndex = 12;
+            this.moneyText.Location = new System.Drawing.Point(76, 294);
+            this.moneyText.Name = "moneyText";
+            this.moneyText.Size = new System.Drawing.Size(57, 20);
+            this.moneyText.TabIndex = 12;
             // 
             // changeButton
             // 
@@ -157,6 +158,7 @@
             this.changeButton.TabIndex = 13;
             this.changeButton.Text = "Calulate Change";
             this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // changeOutput
             // 
@@ -174,23 +176,26 @@
             this.printButton.TabIndex = 15;
             this.printButton.Text = "Print Receipt";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
-            // label7
+            // printLabel
             // 
-            this.label7.BackColor = System.Drawing.Color.Snow;
-            this.label7.Location = new System.Drawing.Point(136, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(223, 298);
-            this.label7.TabIndex = 16;
+            this.printLabel.BackColor = System.Drawing.Color.Snow;
+            this.printLabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printLabel.Location = new System.Drawing.Point(139, 72);
+            this.printLabel.Name = "printLabel";
+            this.printLabel.Size = new System.Drawing.Size(223, 269);
+            this.printLabel.TabIndex = 16;
             // 
             // newOrderButton
             // 
-            this.newOrderButton.Location = new System.Drawing.Point(134, 370);
+            this.newOrderButton.Location = new System.Drawing.Point(137, 344);
             this.newOrderButton.Name = "newOrderButton";
             this.newOrderButton.Size = new System.Drawing.Size(225, 35);
             this.newOrderButton.TabIndex = 17;
             this.newOrderButton.Text = "New Order ";
             this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
             // 
             // subOutput
             // 
@@ -226,11 +231,11 @@
             this.Controls.Add(this.taxOutput);
             this.Controls.Add(this.subOutput);
             this.Controls.Add(this.newOrderButton);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.printLabel);
             this.Controls.Add(this.printButton);
             this.Controls.Add(this.changeOutput);
             this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.moneyText);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.calulateButton);
@@ -241,6 +246,7 @@
             this.Controls.Add(this.pizzaInput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Pizza\'s Hut";
             this.ResumeLayout(false);
@@ -260,11 +266,11 @@
         private System.Windows.Forms.Button calulateButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox moneyText;
         private System.Windows.Forms.Button changeButton;
         private System.Windows.Forms.Label changeOutput;
         private System.Windows.Forms.Button printButton;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label printLabel;
         private System.Windows.Forms.Button newOrderButton;
         private System.Windows.Forms.Label subOutput;
         private System.Windows.Forms.Label taxOutput;
