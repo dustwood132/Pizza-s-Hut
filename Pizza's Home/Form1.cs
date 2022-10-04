@@ -102,7 +102,7 @@ namespace Pizza_s_Home
             printLabel.Text += $"\n\n  Order Number 2068";
             Refresh();
             Thread.Sleep(1000);
-            printLabel.Text += $"\n   Oct 3 2022";
+            printLabel.Text += $"\n  Oct 3 2022";
             Refresh();
             Thread.Sleep(1000);
             printLabel.Text += $"\n\n Pizza x{numOfpizza} @    {pizzaPrice.ToString("C")}";
