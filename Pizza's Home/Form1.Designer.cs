@@ -184,14 +184,14 @@
             this.printLabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printLabel.Location = new System.Drawing.Point(139, 72);
             this.printLabel.Name = "printLabel";
-            this.printLabel.Size = new System.Drawing.Size(223, 269);
+            this.printLabel.Size = new System.Drawing.Size(204, 269);
             this.printLabel.TabIndex = 16;
             // 
             // newOrderButton
             // 
             this.newOrderButton.Location = new System.Drawing.Point(137, 344);
             this.newOrderButton.Name = "newOrderButton";
-            this.newOrderButton.Size = new System.Drawing.Size(225, 35);
+            this.newOrderButton.Size = new System.Drawing.Size(206, 35);
             this.newOrderButton.TabIndex = 17;
             this.newOrderButton.Text = "New Order ";
             this.newOrderButton.UseVisualStyleBackColor = true;
@@ -226,7 +226,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(379, 410);
+            this.ClientSize = new System.Drawing.Size(361, 410);
             this.Controls.Add(this.totalOutput);
             this.Controls.Add(this.taxOutput);
             this.Controls.Add(this.subOutput);
